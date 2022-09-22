@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <style>
+            .slide-in-left{
+                transition:0.5s;
+                position:relative;
+                opacity:1;
+                animation: slideInLeft 1s 2s;
+                -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
+                -moz-animation-fill-mode: forwards;    /* FF 5+ */
+                -o-animation-fill-mode: forwards;      /* Not implemented yet */
+                -ms-animation-fill-mode: forwards;     /* IE 10+ */
+                animation-fill-mode: forwards;         /* When the spec is finished */
+            }
+
+            body{
+                margin:0;
+            }
+
+
+            @keyframes slideInLeft {
+            from{left:0;opacity:1;} 
+            to{left:-100%;opacity:1;}
+}
+        </style>
+    </head>
+    <body>
+        <div id="loader" class="slide-in-left" style="background-color:black; height:100%; width:100%; color:white">
+            LOADING
+        </div>
+    </body>
+</html>
+
+<script>
+    /*
+    window.onload = function executeLoader () {
+        document.getElementById("loader").classList.add('slide-in-left');
+        //Ajouter l'animation au loading qui change de truc.
+    }
+    */
+</script>
