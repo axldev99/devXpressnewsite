@@ -1,41 +1,29 @@
 <html>
     <head>
-        <style>
-            .slide-in-left{
-                transition:0.5s;
-                position:relative;
-                opacity:1;
-                animation: slideInLeft 1s 2s;
-                -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
-                -moz-animation-fill-mode: forwards;    /* FF 5+ */
-                -o-animation-fill-mode: forwards;      /* Not implemented yet */
-                -ms-animation-fill-mode: forwards;     /* IE 10+ */
-                animation-fill-mode: forwards;         /* When the spec is finished */
-            }
-
-            body{
-                margin:0;
-            }
-
-
-            @keyframes slideInLeft {
-            from{left:0;opacity:1;} 
-            to{left:-100%;opacity:1;}
-}
-        </style>
+        <link rel="stylesheet" href="assets/css/main.css">
     </head>
-    <body>
-        <div id="loader" class="slide-in-left" style="background-color:black; height:100%; width:100%; color:white">
-            LOADING
+    <body class="no-scroll transparentScroll">
+        <div id="loader" class="loaderAnim loader">
+            <div class="logo-wrapper">
+                <div class="loaderLogoAnimPart1 loader-logoPart1"></div>
+                <div class="loaderLogoAnimPart2 loader-logoPart2"></div>
+                <div class="loaderLogoAnimPart3 loader-logoPart3"></div>
+                <div class="loaderLogoAnimPart4 loader-logoPart4"></div>
+            </div>
         </div>
+        <section id="landingSection" class="landingSection">
+            aa
+        </section>
+        <section id="businessSection" class="businessSection">
+            aa
+        </section>
     </body>
 </html>
 
 <script>
-    /*
-    window.onload = function executeLoader () {
-        document.getElementById("loader").classList.add('slide-in-left');
-        //Ajouter l'animation au loading qui change de truc.
-    }
-    */
+    //Force le scroll pour 1.9 secondes
+    history.scrollRestoration = "manual";
+
+    setTimeout(()=> document.body.classList.remove('no-scroll') ,1900);
+    //Fin du force scroll
 </script>

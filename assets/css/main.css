@@ -1,0 +1,147 @@
+
+body{
+    margin:0;
+}
+
+.no-scroll{
+    overflow:hidden !important;
+}
+
+.transparentScroll{
+    overflow:overlay;
+}
+
+.loader{
+    background-color:black; 
+    height:100%; 
+    width:100%; 
+    z-index:1;
+}
+
+section{
+    height:100%;
+    width: 100%;
+    background-color:orange;
+    position:absolute;
+    z-index:0;
+    
+}
+
+.landingSection{
+    top:0;
+}
+
+.businessSection{
+    background-color: aquamarine;
+    top:100%;
+}
+
+.logo-wrapper{
+    height:100%;
+    position:relative;
+}
+
+.loader-logoPart1{
+    background-image: url("../images/logo/Part1.png");
+    height:100%;
+    width:100%;
+    background-size: contain;
+    position:absolute;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+.loader-logoPart2{
+    background-image: url("../images/logo/Part2.png");
+    height:100%;
+    width:100%;
+    background-size: contain;
+    position:absolute;
+    background-repeat:no-repeat;
+    background-position:center center;
+
+}
+
+.loader-logoPart3{
+    background-image: url("../images/logo/Part3.png");
+    height:100%;
+    width:100%;
+    background-size: contain;
+    position:absolute;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+.loader-logoPart4{
+    background-image: url("../images/logo/Part4.png");
+    height:100%;
+    width:100%;
+    background-size: contain;
+    position:absolute;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+/* Animations start */
+
+.loaderAnim{
+    position:relative;
+    animation: slideInLeft 0.75s 1.15s;
+    -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
+    -moz-animation-fill-mode: forwards;    /* FF 5+ */
+    -o-animation-fill-mode: forwards;      /* Not implemented yet */
+    -ms-animation-fill-mode: forwards;     /* IE 10+ */
+    animation-fill-mode: forwards;         /* When the spec is finished */
+}
+
+@keyframes slideInLeft {
+from{left:0;opacity:1;} 
+to{left:-100%;opacity:1;}
+}
+
+.loaderLogoAnimPart1{
+    -webkit-animation: fade-in 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+
+.loaderLogoAnimPart2{
+    -webkit-animation:slide-left 0.25s 0.3s ease-in-out both;animation:slide-left 0.25s 0.3s ease-in-out both
+}
+
+@keyframes slide-left {
+from{left:25%;opacity:0;} 
+to{left:0%;opacity:1;}
+}
+
+.loaderLogoAnimPart3{
+    -webkit-animation:slide-right .25s 0.5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-right .25s 0.5s cubic-bezier(.25,.46,.45,.94) both
+}
+
+.loaderLogoAnimPart4{
+    -webkit-animation:slide-right .25s 0.65s cubic-bezier(.25,.46,.45,.94) both;animation:slide-right .25s 0.65s cubic-bezier(.25,.46,.45,.94) both
+}
+
+@keyframes slide-right {
+from{left:-3%;opacity:0;} 
+to{left:0%;opacity:1;}
+}
+
+/* Animations end */
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(90, 90, 90);
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+
+/* END SCROLLBAR */
