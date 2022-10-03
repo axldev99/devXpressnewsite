@@ -29,10 +29,13 @@ section{
 
 .landingSection{
     top:0;
+    /*
+    background: rgb(66,66,66);
+    background: linear-gradient(23deg, rgba(66,66,66,1) 2%, rgba(47,47,47,1) 53%, rgba(0,0,0,1) 100%);
+    */
 }
 
 .businessSection{
-    background-color: aquamarine;
     top:100%;
 }
 
@@ -85,7 +88,7 @@ section{
 
 .loaderAnim{
     position:relative;
-    animation: slideInLeft 0.75s 1.15s;
+    animation: slideInLeft 0.75s 1.25s;
     -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
     -moz-animation-fill-mode: forwards;    /* FF 5+ */
     -o-animation-fill-mode: forwards;      /* Not implemented yet */
@@ -99,14 +102,26 @@ to{left:-100%;opacity:1;}
 }
 
 .loaderLogoAnimPart1{
-    -webkit-animation: fade-in 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: fade-in 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    -webkit-animation: fade-in 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both, slide-and-fade 0.2s 1s;
+    animation: fade-in 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both, slide-and-fade 0.2s 1s;
+    -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
+    -moz-animation-fill-mode: forwards;    /* FF 5+ */
+    -o-animation-fill-mode: forwards;      /* Not implemented yet */
+    -ms-animation-fill-mode: forwards;     /* IE 10+ */
+    animation-fill-mode: forwards;         /* When the spec is finished */
 }
 
 @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
 
 .loaderLogoAnimPart2{
-    -webkit-animation:slide-left 0.25s 0.3s ease-in-out both;animation:slide-left 0.25s 0.3s ease-in-out both
+    -webkit-animation:slide-left 0.25s 0.3s ease-in-out both, slide-and-fade 0.2s 1s;
+    animation:slide-left 0.25s 0.3s ease-in-out both, slide-and-fade 0.2s 1s;
+    opacity:0;
+    -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
+    -moz-animation-fill-mode: forwards;    /* FF 5+ */
+    -o-animation-fill-mode: forwards;      /* Not implemented yet */
+    -ms-animation-fill-mode: forwards;     /* IE 10+ */
+    animation-fill-mode: forwards;         /* When the spec is finished */
 }
 
 @keyframes slide-left {
@@ -115,16 +130,36 @@ to{left:0%;opacity:1;}
 }
 
 .loaderLogoAnimPart3{
-    -webkit-animation:slide-right .25s 0.5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-right .25s 0.5s cubic-bezier(.25,.46,.45,.94) both
+    -webkit-animation:slide-right .25s 0.5s cubic-bezier(.25,.46,.45,.94) both, slide-and-fade 0.2s 1s;
+    animation:slide-right .25s 0.5s cubic-bezier(.25,.46,.45,.94) both, slide-and-fade 0.2s 1s;
+    opacity:0;
+
+    -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
+    -moz-animation-fill-mode: forwards;    /* FF 5+ */
+    -o-animation-fill-mode: forwards;      /* Not implemented yet */
+    -ms-animation-fill-mode: forwards;     /* IE 10+ */
+    animation-fill-mode: forwards;         /* When the spec is finished */ 
 }
 
 .loaderLogoAnimPart4{
-    -webkit-animation:slide-right .25s 0.65s cubic-bezier(.25,.46,.45,.94) both;animation:slide-right .25s 0.65s cubic-bezier(.25,.46,.45,.94) both
+    -webkit-animation:slide-right .25s 0.65s cubic-bezier(.25,.46,.45,.94) both, slide-and-fade 0.2s 1s;
+    animation:slide-right .25s 0.65s cubic-bezier(.25,.46,.45,.94) both, slide-and-fade 0.2s 1s;
+    opacity:0;
+    -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
+    -moz-animation-fill-mode: forwards;    /* FF 5+ */
+    -o-animation-fill-mode: forwards;      /* Not implemented yet */
+    -ms-animation-fill-mode: forwards;     /* IE 10+ */
+    animation-fill-mode: forwards;         /* When the spec is finished */
 }
 
 @keyframes slide-right {
 from{left:-3%;opacity:0;} 
 to{left:0%;opacity:1;}
+}
+
+@keyframes slide-and-fade {
+    from{left: 0%; opacity:1;}
+    to{left:-20%; opacity:0;}
 }
 
 /* Animations end */
