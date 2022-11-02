@@ -1,6 +1,12 @@
 
+:root{
+    --main-black: rgb(6, 6, 6);
+    --second-black: rgb(12, 12, 12);
+}
+
 body{
     margin:0;
+    font-family:'Raleway',sans-serif;
 }
 
 .no-scroll{
@@ -12,32 +18,13 @@ body{
 }
 
 .loader{
-    background-color:black; 
+    background-color:var(--main-black); 
     height:100%; 
     width:100%; 
     z-index:1;
+    overflow: hidden;
 }
 
-section{
-    height:100%;
-    width: 100%;
-    background-color:orange;
-    position:absolute;
-    z-index:0;
-    
-}
-
-.landingSection{
-    top:0;
-    /*
-    background: rgb(66,66,66);
-    background: linear-gradient(23deg, rgba(66,66,66,1) 2%, rgba(47,47,47,1) 53%, rgba(0,0,0,1) 100%);
-    */
-}
-
-.businessSection{
-    top:100%;
-}
 
 .logo-wrapper{
     height:100%;
@@ -180,3 +167,89 @@ to{left:0%;opacity:1;}
 }
 
 /* END SCROLLBAR */
+
+
+/* FIRST SECTION */
+
+section {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+
+}
+
+.landingSection {
+    top: 0;
+    background-color:var(--second-black);
+    /*
+    background: rgb(66,66,66);
+    background: linear-gradient(23deg, rgba(66,66,66,1) 2%, rgba(47,47,47,1) 53%, rgba(0,0,0,1) 100%);
+    */
+}
+
+.piedestal{
+    height:60%;
+    width:60%;
+    float:right;
+}
+
+.mobile-version{
+    background-image: url("../images/mobile-version.png");
+    height: 27%;
+    width: 10%;
+    background-size: contain;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right:20px;
+    z-index:3;
+}
+
+.pc-version {
+    background-image: url("../images/pc-version.png");
+    height: 40%;
+    width: 40%;
+    background-size: contain;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index:2;
+}
+
+.tablet-version {
+    background-image: url("../images/tablet-version.png");
+    height: 33%;
+    width: 33%;
+    background-size: contain;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index:1;
+}  
+
+.floating-animation {
+    transform: translatey(0px);
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        
+        transform: translatey(0px);
+    }
+
+    50% {
+
+        transform: translatey(-20px);
+    }
+
+    100% {
+
+        transform: translatey(0px);
+    }
+}
+
+.businessSection {
+    top: 100%;
+}

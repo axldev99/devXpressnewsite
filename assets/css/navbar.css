@@ -1,0 +1,141 @@
+.navBar-Link {
+    text-decoration: none;
+    color: white !important;
+}
+
+.navBarVisible {
+    color: rgb(26, 107, 139) !important;
+}
+
+.navBar-Link:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.noDeco {
+    text-decoration: none;
+}
+
+nav {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background: #1b242f;
+    border-bottom: 3px solid rgb(25, 173, 231);
+    height: 50px;
+    text-align: left;
+    width: 100%;
+    z-index: 99;
+}
+
+.link-wrap {
+    margin-left: 8%;
+    display: flex;
+
+    height: auto;
+    transition: height 0.5s ease;
+}
+
+div .link-wrap {
+    height: auto;
+    transition: height 0.5s ease;
+}
+
+.link-wrap div {
+    padding-right: 20px;
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+
+.desk {
+    position: relative;
+    color: white;
+    font-size: 16pt;
+}
+
+.link-wrap div:hover {
+    color: rgb(25, 173, 231) !important;
+}
+
+.link-wrap div {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/*Pour la navbar*/
+.invisible{
+  display:none;
+}
+
+@keyframes visi{
+  from{top:-230px; opacity:0.5;}
+  to{top:-180px; opacity:1;}
+}
+
+@media only screen and (max-width: 610px){
+  .link-wrap{
+    display:none;
+    margin-left:0%;
+    transition:height 0.5s;
+  }
+  .visible{
+    height:180px !important;
+    margin-top:230px;
+    background-color:#1b242f;
+    position:absolute;
+    animation: visi 0.3s ease;
+    -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
+    -moz-animation-fill-mode: forwards;    /* FF 5+ */
+    -o-animation-fill-mode: forwards;      /* Not implemented yet */
+    -ms-animation-fill-mode: forwards;     /* IE 10+ */
+  }
+
+  .intraLink{
+    padding-top:10px;
+    padding-bottom:10px;
+  }
+
+  .navbarHamburger{
+    cursor:pointer;
+    display:block !important;
+  }
+}
+
+nav .link-wrap{
+  transition: height 0.3s ease-out;
+}
+
+.navbarHamburger{
+  display:none;
+  float:right; 
+  position:absolute;
+  left:calc(100% - 50px);
+}
+
+@media only screen and (min-width: 611px){
+  .link-wrap{
+    display:flex !important;
+  }
+}
+
+@media only screen and (max-width: 530px){
+  .form{
+    margin-left:5%;
+    margin-right:5%;
+  }
+  .title{
+    width:280px;
+  }
+  .pageTitle{
+    font-size:1.8em;
+  }
+  .formEntry{
+    min-width: 280px;
+  }
+}
+
+@media only screen and (max-width: 430px){
+  #directiveArrow{
+    display:none;
+  }
+}
