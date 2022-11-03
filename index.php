@@ -12,6 +12,7 @@
 
         <div style="overflow:unset; top:0px;">
             <?php include "components/navbar.php"; ?>
+            
             <section id="landingSection" class="landingSection">
                 <div class="landing-top-part">
                     <div class="top-logo">
@@ -23,8 +24,6 @@
                 </div>
             </section>
         
-        
-        
             <section style="height:2000px"id="businessSection" class="businessSection">
                 <div class="piedestal">
                     <div class="mobile-version floating-animation"></div>
@@ -32,6 +31,7 @@
                     <div class="tablet-version"></div>
                 </div>
             </section>
+            
         </div>
     </body>
 </html>

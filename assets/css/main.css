@@ -230,28 +230,23 @@ h1 {
 
 
 .landing-top-part .special-btn{
-
     width: 200px;
-        font-size: 16px;
-        font-weight: 600;
-        color: #fff;
-        cursor: pointer;
-        margin: 20px;
-        text-align: center;
-        border: none;
-        background-size: 300% 100%;
-    
-        border-radius: 50px;
-        moz-transition: all .4s ease-in-out;
-        -o-transition: all .4s ease-in-out;
-        -webkit-transition: all .4s ease-in-out;
-        transition: all .4s ease-in-out;
-
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
     background-image: linear-gradient(to right, #916027 0%, #f5ea74 20%, #f2e65b 84%, #917827 100%);
-        box-shadow: 0 4px 15px 0 rgba(226, 210, 113, 0.75);
+    box-shadow: 0 4px 15px 0 rgba(226, 210, 113, 0.75);
     cursor:pointer;
     height:75px;
-
     line-height:75px;
     border-radius: 50px;
     text-decoration:none;
@@ -281,6 +276,14 @@ h1 {
     text-align:center;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* BUSINESS SECTION */
+
+.businessSection {
+    top: 100%;
+    background-color: var(--second-black);
+    margin-top:-53px; /*Hauteur de la navbar*/
 }
 
 .piedestal{
@@ -365,8 +368,4 @@ h1 {
 
         transform: translatey(0px);
     }
-}
-
-.businessSection {
-    top: 100%;
 }
