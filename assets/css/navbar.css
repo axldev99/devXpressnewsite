@@ -20,12 +20,16 @@ nav {
     bottom: 0;
     left: 0;
     position: absolute;
-    background: #1b242f;
-    border-bottom: 3px solid rgb(25, 173, 231);
+    background: transparent;
+    border-bottom: 3px solid ;
     height: 50px;
     text-align: left;
     width: 100%;
     z-index: 99;
+}
+
+nav a i, .link-wrap div {
+    line-height: 50px !important;
 }
 
 .link-wrap {
@@ -81,7 +85,7 @@ div .link-wrap {
   .visible{
     height:180px !important;
     margin-top:230px;
-    background-color:#1b242f;
+    background-color: transparent;
     position:absolute;
     animation: visi 0.3s ease;
     -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */

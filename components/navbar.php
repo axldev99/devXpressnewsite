@@ -10,3 +10,5 @@
         <i class="fa fa-bars"></i>
       </a>
     </nav>  
+
+    <script src="js/navbar.js"></script>
