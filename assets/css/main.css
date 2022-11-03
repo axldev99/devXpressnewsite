@@ -174,14 +174,13 @@ to{left:0%;opacity:1;}
 section {
     height: 100%;
     width: 100%;
-    position: absolute;
     z-index: 0;
-
 }
 
 .landingSection {
     top: 0;
     background-color:var(--second-black);
+    position:absolute;
     /*
     background: rgb(66,66,66);
     background: linear-gradient(23deg, rgba(66,66,66,1) 2%, rgba(47,47,47,1) 53%, rgba(0,0,0,1) 100%);

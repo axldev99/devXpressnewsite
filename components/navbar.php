@@ -1,4 +1,4 @@
-    <nav class="flex desk" style="position:sticky !important; top:0px; margin-top:100vh">
+    <nav class="flex desk" style="position:sticky !important; top:0px;">
       <div id="link-wrap" class="link-wrap">
         <a href="#topPage" onclick="closeMenu()" class="navBar-Link disapear"><div class="active intraLink" id="home">Accueil</div></a>
         <a href="#aPropos" onclick="closeMenu()" class="navBar-Link disapear"><div class="intraLink" id="about">À propos</div></a>
